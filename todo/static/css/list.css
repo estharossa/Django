@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #2C2C2C;
+    padding: 0.5vh 2vh;
+}
+
+.container {
+
+}
+
+.header h2 {
+    color: white;
+}
+
+p {
+    color: blue;
+}
+
+.main_container {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo_button {
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.todos_title {
+    margin-bottom: 24px;
+}
+
+.buttons_container {
+    display: flex;
+}
+
+.buttons_container .button_completed {
+    background-color: orange;
+    padding: 4px 12px;
+    border-radius: 4px;
+    color: black;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+.buttons_container .button_delete {
+    background-color: red;
+    padding: 4px 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: white;
+}

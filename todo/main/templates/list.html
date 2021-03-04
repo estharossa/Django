@@ -1,0 +1,44 @@
+{% load static %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/list.css' %}">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>Django To-Do App</h2>
+    </div>
+
+    <div class="main_container">
+        <div class="todo_button">
+            Add Task
+        </div>
+
+        <h1 class="todos_title">Todos</h1>
+
+        <table class="table table_bordered">
+            {% for todo in todos %}
+                <tr>
+                    <td>{{ todo.title }}</td>
+                    <td>{{ todo.created_at }}</td>
+                    <td>{{ todo.due_on }}</td>
+                    <td>{{ todo.owner }}</td>
+                    <td>{{ todo.is_completed }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+        <div class="buttons_container">
+            <div class="button_completed">View completed tasks</div>
+            <div class="button_delete">Delete this list</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
